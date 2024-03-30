@@ -40,7 +40,7 @@ config_translation_dir = os.path.join(config_dir, "translations")
 # Default config file created if none exists
 DEFAULT_CONFIG_STR = f"""[project]
 # Whether to enable telemetry (default: true). No personal data is collected.
-enable_telemetry = true
+enable_telemetry = false
 
 
 # List of environment variables to be provided by each user to use the app.
@@ -77,19 +77,19 @@ latex = false
 
 # Allows user to use speech to text
 [features.speech_to_text]
-    enabled = false
+    enabled = true
     # See all languages here https://github.com/JamesBrill/react-speech-recognition/blob/HEAD/docs/API.md#language-string
-    # language = "en-US"
+ language = "nl-NL"
 
 [UI]
 # Name of the app and chatbot.
-name = "Chatbot"
+name = "Klantendienst"
 
 # Show the readme while the thread is empty.
 show_readme_as_default = true
 
 # Description of the app and chatbot. This is used for HTML tags.
-# description = ""
+description = "Cusmato Klantendienst"
 
 # Large size content are by default collapsed for a cleaner ui
 default_collapse_content = true

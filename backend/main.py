@@ -29,9 +29,9 @@ async def custom_auth():
 async def on_chat_start():
     cl.user_session.set(
         "message_history",
-        [{"role": "system", "content": "You are a helpful assistant."}],
+        [{"role": "system", "content": "Jij bent een behulpzame assistent."}],
     )
-    await cl.Message(content="Connected to Chainlit!").send()
+    await cl.Message(content="Verbonden met Cusmato!").send()
 
 
 @cl.on_message
