@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\chainlit",
+    "\\backend\\chainlit\\data"
+  ],
+  "SelectedNode": "\\backend\\chainlit\\__init__.py",
+  "PreviewInSolutionExplorer": false
+}

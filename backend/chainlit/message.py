@@ -33,7 +33,7 @@ class MessageBase(ABC):
     content: str = ""
     type: MessageStepType = "assistant_message"
     disable_feedback = False
-    streaming = False
+    streaming = True
     created_at: Union[str, None] = None
     fail_on_persist_error: bool = False
     persisted = False
