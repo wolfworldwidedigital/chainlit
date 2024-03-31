@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 from chainlit.auth import create_jwt
 from chainlit.server import app
 import chainlit as cl
+from chainlit.input_widget import Select, Switch, Slider
 
 
 client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
@@ -19,19 +20,21 @@ settings = {
     "presence_penalty": 0,
 }
 
+
 @app.get("/custom-auth")
 async def custom_auth():
     # Verify the user's identity with custom logic.
-    token = create_jwt(cl.User(identifier="Test User"))
+    token = create_jwt(cl.User())
     return JSONResponse({"token": token})
+
 
 @cl.on_chat_start
 async def on_chat_start():
     cl.user_session.set(
         "message_history",
-        [{"role": "system", "content": "Jij bent een behulpzame assistent."}],
+        [{"role": "system", "content": "You are a helpful assistant."}],
     )
-    await cl.Message(content="Verbonden met Cusmato!").send()
+    await cl.Message(content="Connected to Cusmato!").send()
 
 
 @cl.on_message

@@ -62,7 +62,7 @@ export default function Widget({ config }: Props) {
             p={1.5}
           >
             {config.button?.imageUrl ? (
-              <img width="100%" src={config.button?.imageUrl} />
+              <img width="100%" src={config.button?.imageUrl} alt="copilot" />
             ) : (
               <MessageCircleIcon
                 color="inherit"

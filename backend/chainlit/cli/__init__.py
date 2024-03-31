@@ -139,8 +139,7 @@ def chainlit_run(target, watch, headless, debug, ci, no_cache, host, port):
         config.project.enable_telemetry = False
         no_cache = True
         # This is required to have OpenAI LLM providers available for the CI run
-        os.environ["OPENAI_API_KEY"] = "sk-FAKE-OPENAI-API-KEY"
-        # This is required for authenticationt tests
+        os.environ["OPENAI_API_KEY"] = "OPENAI-API-KEY"
         os.environ["CHAINLIT_AUTH_SECRET"] = "SUPER_SECRET"
     else:
         trace_event("chainlit run")

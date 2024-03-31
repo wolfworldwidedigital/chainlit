@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@chainlit/react-client':
+    specifier: workspace:^
+    version: 'link:'
   '@types/react':
     specifier: ^18.2.0
     version: 18.2.0

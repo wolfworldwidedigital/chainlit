@@ -16,7 +16,9 @@ export default function WaterMark() {
   const Logo = theme === 'light' ? LogoLight : LogoDark;
   return (
     <Stack mx="auto" className="watermark">
-      <a href="https://cusmato.com"
+      <a
+        href="https://cusmato.com"
+        title="https://cusmato.com"
         rel="noopener noreferrer"
         target="_blank"
         style={{
