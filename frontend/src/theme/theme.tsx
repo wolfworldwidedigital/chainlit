@@ -68,7 +68,7 @@ const darkTheme = (fontFamily?: string, breakpoints?: BreakpointsOptions) =>
         paper: grey[900]
       },
       primary: {
-        main: '#F80061',
+        main: '#0c0500',
         dark: primary[800],
         light: '#FFE7EB',
         contrastText: white
@@ -102,7 +102,7 @@ const lightTheme = (fontFamily?: string, breakpoints?: BreakpointsOptions) =>
         paper: white
       },
       primary: {
-        main: '#F80061',
+        main: '#0c0500',
         dark: primary[800],
         light: '#FFE7EB',
         contrastText: white
