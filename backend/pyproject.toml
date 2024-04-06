@@ -67,7 +67,7 @@ types-requests = "^2.31.0.2"
 types-aiofiles = "^23.1.0.5"
 
 [tool.mypy]
-python_version = "3.8"
+python_version = "3.12"
 
 
 [[tool.mypy.overrides]]
