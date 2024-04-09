@@ -1,9 +1,9 @@
 [tool.poetry]
-name = "Cusmato"
+name = "chainlit"
 version = "1.0.500"
 keywords = ['LLM', 'Agents', 'gen ai', 'chat ui', 'chatbot ui', 'openai', 'copilot', 'langchain', 'conversational ai']
 description = "AI voor bedrijven."
-authors = ["Cusmato"]
+authors = ["chainlit"]
 license = "Apache-2.0 license"
 readme = "README.md"
 exclude = [
